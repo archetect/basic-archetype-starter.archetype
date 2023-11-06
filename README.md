@@ -1,4 +1,4 @@
-# Basic Archetect archetype starter
+# Basic Archetect Archetype starter
 
 This is an [Archetect](https://archetect.github.io/) archetype for scaffolding
 out a very basic archetype with very few features. This archetype is useful for
