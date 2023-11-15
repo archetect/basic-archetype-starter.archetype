@@ -2,6 +2,14 @@
 
 This is an [Archetect](https://archetect.github.io/) archetype.
 
+## Rendering
+
+To generate content from this Archetype, copy and execute the following command:
+
+```sh
+  archetect render {% if git_repo %}{{ git_repo }}{% else %}<git repo>{% endif %}
+```
+
 ## Archetype Layout
 
 Archetect has flexibility in how an archetype is laid out. However, the defaults,

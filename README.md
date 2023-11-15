@@ -1,5 +1,13 @@
 # Basic Archetect Archetype starter
 
+## Rendering
+
+To generate an Archetype from this Archetype, copy and execute the following command:
+
+```sh
+archetect render https://github.com/archetect/basic-archetype-starter.archetype.git
+```
+
 This is an [Archetect](https://archetect.github.io/) archetype for scaffolding
 out a very basic archetype with very few features. This archetype is useful for
 exploring the features of Archetect, or if your archetype is very simple. There
@@ -45,6 +53,6 @@ render(Directory("contents"), context);
 
 // Only render ./contents/manifests
 render(Directory("contents/manifests"), context);
-```
+````
 
 ``

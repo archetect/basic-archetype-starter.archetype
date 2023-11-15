@@ -15,5 +15,10 @@ context += prompt("Author:", "author_full", #{
   help: "Author Name and Email",
 });
 
+context += prompt("Git Repo:", "git_repo", #{
+  placeholder: "http://github.com/your-name/your-project",
+  optional: true,
+});
+
 render(Directory("contents"), context);
 

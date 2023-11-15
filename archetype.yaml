@@ -6,4 +6,4 @@ frameworks: ["Archetect"]
 tags: ["Archetype", "Starter"]
 
 requires:
-  archetect: 2.0.0-ALPHA.2
+  archetect: 2.0.0-ALPHA.3
