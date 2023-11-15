@@ -11,10 +11,5 @@ context += prompt("Greeting:", "greeting", #{
   help: "Cliche greeting",
 });
 
-context += prompt("Git Repo:", "git_repo", #{
-  placeholder: "http://github.com/your-name/your-project",
-  optional: true,
-});
-
 render(Directory("contents"), context)
 
