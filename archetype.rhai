@@ -2,22 +2,32 @@ let context = #{};
 
 context.archetect_version = archetect::version();
 
-context += prompt("Archetype Name:", "archetype-name", #{
-  cases: [
-    CasedValue(KebabCase), 
-  ], 
+context += prompt("Archetype Description:", "description", #{
+    placeholder: "Python Fast API Service"
 });
 
-context += prompt("Description:", "description");
+let description = context.description;
+remove(description, " archetype");
+remove(description, " Archetype");
+context.description = description;
+
+context += prompt("Archetype Name:", "archetype-name", #{
+    defaults_with: kebab_case(context["description"]),
+    cases: [
+        CasedValue(KebabCase),
+    ],
+});
+
+
 
 context += prompt("Author:", "author_full", #{
-  placeholder: "Your Name <your.name@domain.com>",
-  help: "Author Name and Email",
+    placeholder: "Your Name <your.name@domain.com>",
+    help: "Author Name and Email",
 });
 
-context += prompt("Git Repo:", "git_repo", #{
-  placeholder: "http://github.com/your-name/your-project",
-  optional: true,
+context += prompt("Git Repo:", "git-repo", #{
+    placeholder: `http://github.com/your-name/${context["archetype-name"]}.archetype.git`,
+    optional: true,
 });
 
 render(Directory("contents"), context);

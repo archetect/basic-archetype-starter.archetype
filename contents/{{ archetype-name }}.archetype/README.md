@@ -7,7 +7,7 @@ This is an [Archetect](https://archetect.github.io/) archetype.
 To generate content from this Archetype, copy and execute the following command:
 
 ```sh
-  archetect render {% if git_repo %}{{ git_repo }}{% else %}<git repo>{% endif %}
+  archetect render {% if git-repo %}{{ git-repo }}{% else %}<git repo>{% endif %}
 ```
 
 ## Archetype Layout
