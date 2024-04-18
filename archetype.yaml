@@ -7,3 +7,6 @@ tags: ["Archetype", "Starter"]
 
 requires:
   archetect: 2.0.0-ALPHA.3
+
+components:
+  gitignore: https://github.com/archetect/dot-gitignore.archetype.git

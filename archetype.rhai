@@ -32,3 +32,8 @@ context += prompt("Git Repo:", "git-repo", #{
 
 render(Directory("contents"), context);
 
+render(Archetype("gitignore"), Path(`${context["archetype-name"]}.archetype`), #{
+    ignore: ["IDEA", "VSCode", "Eclipse"]
+});
+
+
